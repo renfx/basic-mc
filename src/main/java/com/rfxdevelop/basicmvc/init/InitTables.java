@@ -4,6 +4,7 @@ import com.rfxdevelop.basicmvc.dao.simple.SysMapper;
 import com.rfxdevelop.basicmvc.model.BaseData;
 import com.rfxdevelop.basicmvc.model.DbColumn;
 import com.rfxdevelop.basicmvc.model.DbTable;
+import com.rfxdevelop.basicmvc.model.TableShow;
 import lombok.extern.java.Log;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -57,6 +58,9 @@ public class InitTables implements CommandLineRunner{
             }
             columns.put(column_name,dbColumn);
         });
+        //初始化表名数据
         baseData.setTableMap(tableMap);
+        //表名名称对应中文
+        baseData.setTableShowMap(TableShow.install().tableShowMap());
     }
 }

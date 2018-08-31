@@ -53,8 +53,9 @@ window.location：/simple/table/export?&whereList=%5B%7B%22key%22%3A%22index%22%
 支持参数：tableName，whereList，pageQuery，columns
 
 ### 6. 表基础信息
-POST:/baseData/get
-映射表列的备注、是否主键、列类型等。
+POST：/baseData/get  
+tableMap：映射表列的备注、是否主键、列类型等。
+tableShowMap：表名对应的显示名称
 
 
 ## 配置，启动项目
