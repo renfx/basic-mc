@@ -27,6 +27,8 @@ public class TableShow {
         map.put("zz500s","中证500");
         map.put("stock_basics","股票列表");
         map.put("new_stocks","新股数据");
+        map.put("latest_news","实时新闻");
+        map.put("his_data","历史数据");
         return map;
     }
 }
