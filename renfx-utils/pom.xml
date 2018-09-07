@@ -12,6 +12,7 @@
         <poi.version>3.17</poi.version>
     </properties>
     <artifactId>renfx-utils</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>

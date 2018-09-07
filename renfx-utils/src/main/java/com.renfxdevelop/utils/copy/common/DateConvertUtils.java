@@ -762,39 +762,7 @@ public class DateConvertUtils {
         cal.set(Calendar.SECOND, 59);
         return getDateByDateTime(cal.getTime());
 	}
-	
-	public static void main(String[] args) {
-//		System.out.println(new Date().getDate());
-//		System.out.println(getDateTimeByDate(1441728000));
-//		String date = format(getDateTimeByDate(1441728000), "yyyy-MM-dd");
-//		System.out.println(date);
-//		
-//		System.out.println("=================");
-//		System.out.println(getDateByFirstTime(10));
-//		System.out.println(format(getDateTimeByDate(getDateByFirstTime(1 * 60)), "yyyy-MM-dd HH:mm:ss"));
-//		
-//		System.out.println("=================");
-//		System.out.println(getDateByDateTime("2016-03-31", "yyyy-MM-dd"));
-//		System.out.println("1111111111111=================3");
-//		System.out.println(getDateByDateTime("2016-03-31 00:00:00", "yyyy-MM-dd HH:mm:ss"));
-//		System.out.println(getDateByDateTime("2016-04-01 00:00:00", "yyyy-MM-dd HH:mm:ss"));
-//		System.out.println("=================");
-//		Calendar c = Calendar.getInstance();
-//		System.out.println(c.get(Calendar.MONTH));
-//		c.set(Calendar.MONTH, c.get(Calendar.MONTH)+1);
-//		System.out.println(c.get(Calendar.MONTH));
-//		System.out.println(format(c.getTime(),"yyyy-MM-dd"));
-//		
-//		System.out.println("=================");
-//		System.out.println(format(getMonthFisrtDay(new Date()), "yyyy-MM-dd HH:mm:ss"));
-//		System.out.println(format(getMonthLastDay(new Date()), "yyyy-MM-dd HH:mm:ss"));
-//		
-//		System.out.println("=================");
-//		System.out.println(dateConvertDateOrTime("2016-06-15 12:12:12"));
-//		
-		Date date2 = getByDateAfterSecond(100);
-		System.out.println(format(date2, "ss mm H dd M ? yyyy-yyyy"));
-	}
+
 	
 	   /** 
 	    * 判断当前日期是星期几 

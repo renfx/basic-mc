@@ -91,7 +91,4 @@ public class ObjectUtils {
 		return m.matches();
 	}
 
-	public static void main(String[] args) {
-		System.out.println(isNumber("01"));
-	}
 }

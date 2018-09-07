@@ -302,61 +302,6 @@ public class DoubleUtils {
 		}
 		return d;
 	}
-	
-	public static void main(String[] args) {
-		int m = 7 - 7%2;
-		System.out.println(new Double(m));
-		Double b = 20.4;
-		System.out.println(mul(new Double(m), b));
-		
-		BigDecimal num1 = new BigDecimal("1.4"); 
-		BigDecimal num2 = new BigDecimal("1"); 
-		System.out.println(num1.remainder(num2).toString());
-		Double b1 = 1.4;
-		Double b2 = 1.0;
-		System.out.println(DoubleUtils.remain(b1, b2));
-		System.out.println(num1.divide(num2, 4, BigDecimal.ROUND_HALF_UP).intValue());
-		
-		if(b!=123456789)
-			System.out.println("ok");
-		
-		System.out.println("=============================");
-		
-		Double b3 = 3d;
-		if(b3!=0)
-			System.out.println("ok");
-		
-		System.out.println("=============================");
-		
-		Double b4 = 1.4;
-		Double b5 = 1d;
-		System.out.println(DoubleUtils.remain(b4, b5));
-		Double d6 = 1099999999.00;
-		String ab = DoubleUtils.toString(d6);
-		System.out.println(ab);
-		System.out.println(DoubleUtils.format(d6,"#0.00"));
-		
-		double price = 37.8 * 3.0;//实际值：113.4
-		System.out.println(price);
-		
-		double price1 = DoubleUtils.mul(37.8, 3.0);
-		System.out.println(price1);
-		
-		double totalMoney = DoubleUtils.sub(113.4, price);
-		if(totalMoney<=0){
-			System.out.println("ok");
-		}else{
-			System.out.println("no");
-		}
-		//totalMoney = DoubleUtils.round(totalMoney, 2);
-		System.out.println(totalMoney);
-		
-		System.out.println(decimalNearRound(20.205));
-		
-		Double v1 = 899999999999999999999.9999;
-		BigDecimal bd = new BigDecimal("899999999999999999999.9999");
-		System.out.println(toString(v1));
-		System.out.println(bd.toString());
-	}
+
 	
 }
