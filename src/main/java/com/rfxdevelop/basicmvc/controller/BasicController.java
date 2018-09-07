@@ -1,10 +1,10 @@
 package com.rfxdevelop.basicmvc.controller;
 
 import com.alibaba.druid.support.json.JSONUtils;
-import com.renfxdevelop.utils.original.request.RequestParamUtil;
 import com.rfxdevelop.basicmvc.dao.dynamic.IMapper;
 import com.rfxdevelop.basicmvc.dao.dynamic.exception.MapperParamException;
 import com.rfxdevelop.basicmvc.model.Result;
+import com.rfxdevelop.basicmvc.test.original.request.RequestParamUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
