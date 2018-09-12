@@ -70,7 +70,7 @@
 
 
 	<!--指定最基础的日志输出级别-->
-	<root level="Error">
+	<root level="Info">
 		<!--appender将会添加到这个loger-->
 		<appender-ref ref="fileInfoLog"/>
 		<appender-ref ref="fileErrorLog"/>
