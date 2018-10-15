@@ -4,7 +4,6 @@ import com.rfxdevelop.basicmvc.dao.simple.SysMapper;
 import com.rfxdevelop.basicmvc.model.BaseData;
 import com.rfxdevelop.basicmvc.model.DbColumn;
 import com.rfxdevelop.basicmvc.model.DbTable;
-import com.rfxdevelop.basicmvc.model.TableShow;
 import lombok.extern.java.Log;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -36,6 +35,7 @@ public class InitTables implements CommandLineRunner{
         tableList.stream().forEach(map->{
             String table_name = MapUtils.getString(map, "table_name");
             String column_name = MapUtils.getString(map, "column_name");
+            String table_comment = MapUtils.getString(map, "table_comment");
             DbColumn dbColumn = DbColumn.builder().build();
             try {
                 BeanUtils.populate(dbColumn,map);
@@ -52,6 +52,7 @@ public class InitTables implements CommandLineRunner{
                 columns = new LinkedHashMap<>();
                 DbTable dbTable = DbTable.builder()
                         .table_name(table_name)
+                        .table_comment(table_comment)
                         .columns(columns).build();
 
                 tableMap.put(table_name,dbTable);
@@ -61,6 +62,5 @@ public class InitTables implements CommandLineRunner{
         //初始化表名数据
         baseData.setTableMap(tableMap);
         //表名名称对应中文
-        baseData.setTableShowMap(TableShow.install().tableShowMap());
     }
 }
