@@ -1,6 +1,6 @@
 ## 项目简述
 Spring Boot + MyBatis + Mysql  
-映射表的增、删、改、查基础功能，**本项目将会被SQL注入**
+映射数据库表数据，前端可根据表名列名动态查询数据。
 
 ## 需求
 Python从网络抓取数据到数据库，部分人不需要特别复杂的管理系统来管理这些数据，很可能仅仅需要一个比数据库更友好的界面来查看数据。  
@@ -70,4 +70,4 @@ spring.datasource.druid.url：数据库连接地址
 配置 安装编译器插件lombok
 > 若安装插件后编译依然报错，在 idea 中，File -> Settings -> Build.Execution,Deployment -> Annotation Processors 中的 Enable annotation processing 打勾。同时确保File -> Settings -> Build.Execution,Deployment -> Java Complier 中的 Project bytecode version 选中JDK的版本
 
-然后从com.rfxdevelop.basicmvc.DevelopApplication启动项目
+然后从com.rfxdevelop.basicmvc.Application启动项目
